@@ -415,13 +415,10 @@ function stopGame(streak) {
 }
 
 function shareResult(streak) {
-  const text = `世界大戦カードバトルで ${streak} 連勝しました！`;
-  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
-  window.open(url, "_blank");
-}
+  const text = `世界大戦カードバトルで ${streak} 連勝！🔥
+何連勝いける？
+https://no-more-nukes.netlify.app/`;
 
-function shareResult(streak) {
-  const text = `世界大戦カードバトルで ${streak} 連勝しました！🔥`;
   const hashtags = "世界大戦カードバトル,NOMORENUKES";
 
   const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&hashtags=${hashtags}`;
