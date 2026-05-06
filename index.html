@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界大戦カードバトル - NO MORE NUKES -</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="titleScreen" class="title-screen">
+  <h1>🌍 世界大戦カードバトル<br> - NO MORE NUKES -</h1>
+
+　<p class="press-start">PRESS START</p>
+
+  <div class="title-buttons">
+    <button onclick="startGame()">▶ スタート</button>
+    <button id="titleSoundButton" onclick="toggleSound()">🔊 音ON</button>
+    <button onclick="showRules()">📜 ルール説明</button>
+  </div>
+</div>
+
+<div class="game" id="gameScreen">
+  <h1>🃏 世界大戦カードバトル - NO MORE NUKES -</h1>
+
+  <div class="scores">
+    <p id="playerScore">あなた: 0</p>
+    <p id="enemyScore">相手: 0</p>
+  </div>
+
+  <div class="battle">
+    <div>
+      <p>あなた</p>
+      <div id="playerCard" class="card">?</div>
+    </div>
+    <div>
+      <p>相手</p>
+      <div id="enemyCard" class="card">?</div>
+    </div>
+  </div>
+
+  <h3>相手の使用済みカード</h3>
+  <div id="enemyHistory" class="history"></div>
+
+  <h2 id="result">カードを選んでください</h2>
+
+  <div id="hand" class="hand"></div>
+
+<button onclick="showRules()">ルール説明</button>
+<button onclick="resetGame()">リセット</button>
+<button id="soundButton" onclick="toggleSound()">🔊 音ON</button>
+</div>
+
+<div id="bigCard" class="big-card"></div>
+<div id="skillText" class="skill-text"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
